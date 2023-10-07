@@ -24,6 +24,10 @@
       "dom"
     ]
   },
+  "include": [
+    "src/**/*.ts",
+    "node_modules/tslib/**/*.ts" // Include tslib
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
