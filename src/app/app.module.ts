@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AnalitycsComponent } from './analitycs/analitycs.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AngularFireModule } from '@angular/fire/compat'
+import { environment } from 'enviroments/enviroment';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
